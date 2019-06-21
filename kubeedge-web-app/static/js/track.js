@@ -1,6 +1,7 @@
 $(document).ready(function() {
-    $('#tracktable >tr').click(function(){
-        $(this).find('input:radio[name="track"]').eq(0).attr("checked",'checked');
+    $('tr', '#tracktable').click(function(){
+        $('input[name="track"]').removeAttr('checked')
+        $(this).closest('tr').find('input[name="track"]').prop('checked', true);
     })
 
     $('#track-play-button').click(function(){
