@@ -1,14 +1,14 @@
-.PHONY: all build kubeedge-wechat-app docker clean
+.PHONY: all build kubeedge-web-app docker clean
 
 all:build
 
-build:kubeedge-wechat-app
+build:kubeedge-web-app
 
-kubeedge-wechat-app:
-	go build -o kubeedge-wechat-app main.go
+kubeedge-web-app:
+	go build -o kubeedge-web-app main.go
 
-docker:kubeedge-wechat-app
-	docker build . -t xiangxinyong/kubeedge-wechat-app:v1.0
+docker:kubeedge-web-app
+	docker build . -t xiangxinyong/kubeedge-web-app:v1.0
 
 clean:
-	rm -rf ./kubeedge-wechat-app
+	rm -rf ./kubeedge-web-app

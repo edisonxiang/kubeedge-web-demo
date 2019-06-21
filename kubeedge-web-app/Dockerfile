@@ -5,6 +5,8 @@ LABEL description="KubeEdge Web App"
 
 # Copy from build directory
 COPY kubeedge-web-app /kubeedge-web-app
+COPY static /static
+COPY views /views
 
 # Update
 RUN yum -y update
