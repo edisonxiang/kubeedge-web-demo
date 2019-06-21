@@ -1,4 +1,8 @@
 $(document).ready(function() {
+    $('#tracktable >tr').click(function(){
+        $(this).find('input:radio[name="track"]').eq(0).attr("checked",'checked');
+    })
+
     $('#track-play-button').click(function(){
         PlayTrack();
     })
