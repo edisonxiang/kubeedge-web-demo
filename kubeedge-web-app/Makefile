@@ -8,7 +8,7 @@ kubeedge-web-app:
 	go build -o kubeedge-web-app main.go
 
 docker:kubeedge-web-app
-	docker build . -t xiangxinyong/kubeedge-web-app:v2.5
+	docker build . -t xiangxinyong/kubeedge-web-app:v2.6
 
 clean:
 	rm -rf ./kubeedge-web-app
