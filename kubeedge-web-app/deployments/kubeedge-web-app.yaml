@@ -19,6 +19,6 @@ spec:
       hostNetwork: true
       containers:
       - name: kubeedge-web-app
-        image: xiangxinyong/kubeedge-web-app:v1.0
+        image: xiangxinyong/kubeedge-web-app:v2.5
         imagePullPolicy: IfNotPresent
       restartPolicy: Always
